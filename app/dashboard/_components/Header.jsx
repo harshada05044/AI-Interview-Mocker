@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div className="flex p-4 items-center justify-between bg-secondary shadow-md">
-      <Image src={"/logo.svg"} width={185} height={190} alt="logo" />
+      <Image src={"/logo.svg"} width={160} height={100} alt="logo" />
       <ul className="hidden md:flex gap-14">
         <li
           className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
