@@ -12,6 +12,8 @@ function Header() {
     console.log(path);
   }, [path]);
 
+  // Trigger redeploy
+
   return (
     <div className="flex p-4 items-center justify-between bg-secondary shadow-md">
       <Image src={"/logo.svg"} width={160} height={100} alt="logo" />
