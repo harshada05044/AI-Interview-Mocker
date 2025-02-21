@@ -78,59 +78,60 @@ function AddNewInterview() {
       >
         <h2 className="text-lg text-center">+ Add New</h2>
       </div>
-      <Dialog open={openDialog}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader>
-            <DialogTitle className="text-2xl">
-              Tell us more about your job interview
-            </DialogTitle>
-          </DialogHeader>
-          
-          <div className="text-sm text-muted-foreground font-serif">
-            <h2>
-              Add details about your job position/role, Job description and
-              years of experience.
-            </h2>
-          </div>
-          <form onSubmit={onSubmit}>  {/*Whenever form is submit onSubmit method will be called */}
-            <div>
-              <div className="mt-7 my-2 font-serif">
-                <label>Job Role/Job Position</label>
-                <Input placeholder="Ex.Full Stack Developer " required 
-                onChange={(event)=>setJobPosition(event.target.value)}/>
-              </div>
+      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+  <DialogContent className="max-w-2xl">
+    <DialogHeader>
+      <DialogTitle className="text-2xl">
+        Tell us more about your job interview
+      </DialogTitle>
+    </DialogHeader>
 
-              <div className="my-3 font-serif">
-                <label>Job Description/ Tech Stack in Short</label>
-                <Textarea placeholder="Ex.React,Angular,NodeJs,MySql etc" required 
-                onChange={(event)=>setJobDescription(event.target.value)}/>
-              </div>
+    <div className="text-sm text-muted-foreground font-serif">
+      <h2>
+        Add details about your job position/role, Job description and
+        years of experience.
+      </h2>
+    </div>
+    <form onSubmit={onSubmit}>
+      <div>
+        <div className="mt-7 my-2 font-serif">
+          <label>Job Role/Job Position</label>
+          <Input placeholder="Ex.Full Stack Developer" required 
+          onChange={(event)=>setJobPosition(event.target.value)}/>
+        </div>
 
-              <div className="my-3 font-serif">
-                <label>Years of Experience</label>
-                <Input placeholder="Ex.5" type="number" max="60" 
-                onChange={(event)=>setJobExperience(event.target.value)}/>
-              </div>
-            </div>
-            <div className="flex gap-5 justify-end">
-              <Button
-                type="button"
-                variant="ghost"
-                onClick={() => setOpenDialog(false)}
-              >
-                Cancel
-              </Button>
-              <Button type="submit" disabled={loading}>
-                {loading?
-                <>
-                <LoaderCircle className='animate-spin'/>'Genearating from AI'
-                </>:'Start Interview'
-                }
-                </Button>
-            </div>
-          </form>
-        </DialogContent>
-      </Dialog>
+        <div className="my-3 font-serif">
+          <label>Job Description/ Tech Stack in Short</label>
+          <Textarea placeholder="Ex.React,Angular,NodeJs,MySql etc" required 
+          onChange={(event)=>setJobDescription(event.target.value)}/>
+        </div>
+
+        <div className="my-3 font-serif">
+          <label>Years of Experience</label>
+          <Input placeholder="Ex.5" type="number" max="60" 
+          onChange={(event)=>setJobExperience(event.target.value)}/>
+        </div>
+      </div>
+      <div className="flex gap-5 justify-end">
+        <Button
+          type="button"
+          variant="ghost"
+          onClick={() => setOpenDialog(false)}
+        >
+          Cancel
+        </Button>
+        <Button type="submit" disabled={loading}>
+          {loading?
+          <>
+          <LoaderCircle className='animate-spin'/>'Generating from AI'
+          </>:'Start Interview'
+          }
+        </Button>
+      </div>
+    </form>
+  </DialogContent>
+</Dialog>
+
     </div>
   );
 }
