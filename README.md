@@ -9,10 +9,15 @@ Live Demo: mockedge.vercel.app (Note: May take 30 seconds to load due to server 
 Tech Stack
 
 Frontend: Next.js, React.js, Tailwind CSS
+
 Authentication: Clerk Auth
+
 Database & ORM: PostgreSQL, Drizzle ORM
+
 AI Integration: Gemini API (for question generation, transcription, feedback, and ratings)
+
 Deployment: Vercel
+
 Other Tools: GitHub for version control
 
 Features
@@ -37,49 +42,84 @@ To run this project locally, follow these steps:
 
 Clone the Repository:
 
-textgit clone https://github.com/harshada05044/AI-Interview-Mocker.git
+git clone https://github.com/harshada05044/AI-Interview-Mocker.git
+
 cd AI-Interview-Mocker
 
 Install Dependencies:
+
 textnpm install
+
 # or
+
 yarn install
+
 # or
+
 pnpm install
+
 # or
+
 bun install
 
 Set Up Environment Variables:
 
+
 Create a .env.local file in the root directory and add the following variables:
+
 textNEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
 CLERK_SECRET_KEY=your_clerk_secret_key
+
 DATABASE_URL=your_postgresql_connection_string
+
 GEMINI_API_KEY=your_gemini_api_key
 
+
+
 Obtain Clerk keys from Clerk Dashboard.
+
 Set up a PostgreSQL database (e.g., via Supabase or local Postgres) and provide the connection URL.
+
 Get Gemini API key from Google AI Studio.
 
-
 Run the Development Server:
-textnpm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-Open http://localhost:3000 in your browser to view the app.
-Build for Production:
-textnpm run build
-npm run start
 
+textnpm run dev
+
+# or
+
+yarn dev
+
+# or
+
+pnpm dev
+
+# or
+
+bun dev
+
+Open http://localhost:3000 in your browser to view the app.
+
+Build for Production:
+
+textnpm run build
+
+npm run start
 
 Usage
 
 Sign Up/Login: Use Clerk Auth to create an account or log in.
+
 Start an Interview: Select a topic or role, and the app will generate AI questions.
+
 Respond: Answer verbally; the app transcribes your response using speech-to-text.
+
 Get Feedback: After submission, view AI-generated ideal answers, ratings, and overall performance on the dashboard.
+
 Review Sessions: Access past sessions and track improvements.
+
+
+
+
+
