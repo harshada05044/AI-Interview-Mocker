@@ -3,15 +3,18 @@ AI Mock Interview Website
 Description
 AI Mock Interview is a web application to practice job interviews with AI. It makes interview questions, turns your voice answers into text, saves them, and gives feedback and ratings. It helps users get better at interviews. It has done 30+ sessions with 150+ answers, with 85% text accuracy and 90% feedback consistency. Tested by 8+ users, it improved scores by 20%.
 
-Live Demo: https://mockedge.vercel.app (Note: May take 30 seconds to load due to server setup.)
-
 Tech Stack
 
 Frontend: Next.js, React.js, Tailwind CSS
+
 Authentication: Clerk Auth
+
 Database & ORM: PostgreSQL, Drizzle ORM
+
 AI Integration: Gemini API
+
 Deployment: Vercel
+
 Other Tools: GitHub
 
 Features
