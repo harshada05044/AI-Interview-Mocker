@@ -6,62 +6,20 @@ AI Mock Interview is a web application to practice job interviews with AI. It ma
 Live Demo: https://mockedge.vercel.app (Note: May take 30 seconds to load due to server setup.)
 
 Tech Stack
+
 Frontend: Next.js, React.js, Tailwind CSS
 Authentication: Clerk Auth
 Database & ORM: PostgreSQL, Drizzle ORM
 AI Integration: Gemini API
 Deployment: Vercel
 Other Tools: GitHub
-Features
-AI-Driven Question Generation: Makes questions based on your topic or role.
-Speech-to-Text Transcription: Turns your voice into text in real-time.
-Feedback and Ratings: Gives ideal answers, question ratings, and overall score.
-User Dashboard: Shows your answers, feedback, ratings, and past sessions.
-User Authentication: Secure login with Clerk Auth.
-Data Storage: Saves responses in PostgreSQL with Drizzle ORM.
-Performance Metrics: Tracks score improvements, like 20% better.
-Installation
-To run this locally:
 
-Clone the Repository:
-text
-git clone https://github.com/harshada05044/AI-Interview-Mocker.git
-cd AI-Interview-Mocker
-Install Dependencies:
-text
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-Set Up Environment Variables: Create a .env.local file and add:
-text
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-DATABASE_URL=your_postgresql_connection_string
-GEMINI_API_KEY=your_gemini_api_key
-Get Clerk keys from Clerk Dashboard.
-Set up a PostgreSQL database and add its URL.
-Get Gemini API key from Google AI Studio.
-Run the Development Server:
-text
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-Open http://localhost:3000 in your browser.
-Build for Production:
-text
-npm run build
-npm run start
-Usage
-Sign Up/Login: Use Clerk Auth to join or log in.
-Start an Interview: Pick a topic or role for questions.
-Respond: Answer by voice; it turns it into text.
-Get Feedback: See ideal answers, ratings, and score on the dashboard.
-Review Sessions: Check past sessions and improvements.
+Features
+1) AI-Driven Question Generation: Makes questions based on your topic or role.
+2) Speech-to-Text Transcription: Turns your voice into text in real-time.
+3) Feedback and Ratings: Gives ideal answers, question ratings, and overall score.
+4) User Dashboard: Shows your answers, feedback, ratings, and past sessions.
+5) User Authentication: Secure login with Clerk Auth.
+6) Data Storage: Saves responses in PostgreSQL with Drizzle ORM.
+7) Performance Metrics: Tracks score improvements, like 20% better.
+
